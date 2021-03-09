@@ -1,0 +1,75 @@
+body{
+    background-color:#EBEBEB ;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.header{
+    background-image: url("../Images/unsplash/brendan-church-je3ugmcla3c-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 800px;
+    overflow: auto;
+}
+
+.headerOverlay{
+    height: 800px;
+    position: absolute;
+    width: 100%;
+}
+
+.HeaderContent{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+}
+
+.HeaderTitle{
+    margin-top: 15vh;
+}
+
+.HeaderTitle h1{
+    text-align: center;
+    color:#FFBF00;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    position: relative;
+}
+
+        
+.HeaderTitle h1:before{
+    content: "";
+    display: block;
+    width: 76px;
+    height: 10px;
+    position: absolute;
+    background-color: #FFF;
+    left: -10%;
+    top: 50%;
+}
+.HeaderTitle h1:after{
+    content: "";
+    display: block;
+    width: 76px;
+    height: 10px;
+    position: absolute;
+    background-color: #FFF;
+    right: -10%;
+    top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .HeaderTitle h1{
+        font-size: 32px;
+    }
+    .HeaderTitle h1:before{
+        display: none;
+    }
+    .HeaderTitle h1:after{
+      display: none;
+    }
+}
