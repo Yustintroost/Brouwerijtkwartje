@@ -26,20 +26,22 @@ body{
     height: 100%;
 }
 
+.YellowTitle h1{
+    color:#FFBF00;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
 .HeaderTitle{
     margin-top: 15vh;
 }
 
 .HeaderTitle h1{
     text-align: center;
-    color:#FFBF00;
-    font-size: 70px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 8px;
     position: relative;
 }
-
         
 .HeaderTitle h1:before{
     content: "";
@@ -60,6 +62,171 @@ body{
     background-color: #FFF;
     right: -10%;
     top: 50%;
+}
+
+.specialtitle{
+    text-align: center;
+    position: relative;
+}
+
+.specialtitle h1:before{
+    content: "";
+    display: block;
+    width: 76px;
+    height: 10px;
+    position: absolute;
+    background-color: #FFBF00;
+    left: 20%;
+    top: 50%;
+}
+.specialtitle h1:after{
+    content: "";
+    display: block;
+    width: 76px;
+    height: 10px;
+    position: absolute;
+    background-color: #FFBF00;
+    right: 20%;
+    top: 50%;
+}
+
+.tweebier{
+    margin-top: -50vh;
+}
+.tweebier img{
+    max-width: 75%;
+}
+
+.main{
+    margin-top: 10vh;
+}
+.Special{
+    margin-top: 20vh;
+}
+
+.SpecialSquare{
+    background-color: #FFF;
+    margin-top: 10vh;
+}
+
+.Specialmid{
+    background-color: #FFBF00;
+    text-align: center;
+    color: #FFF;
+    padding: 5%;
+}
+
+.Specialmid p{
+    margin-top: 33%;
+}
+
+.Specialmid h2{
+    margin-top: 33%;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Specialbier img{
+    margin-top: 33%;
+    margin-bottom: 5%;
+}
+
+.Specialsubtitle{
+    text-align: center;
+    margin-bottom: 25%;
+}
+
+.Specialsubtitle h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFBF00;
+}
+
+.Specialsubtitle i{
+    font-size: 28px;
+}
+
+.events{
+    margin-top: 20vh;
+}
+
+.events h1{
+    color:#FFBF00;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.events h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.events h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Eventitem{
+    margin-top: 10vh;
+    background-color: white;
+}
+
+.Eventtext{
+    padding: 5%;
+}
+
+.Eventtext button{
+    background-color:#FFBF00;
+    text-align: center;
+    border: none;
+    margin: 5% 5% 5% 0%;
+    padding: 5% 20%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.newsletter{
+    background-color:#FFBF00;
+    padding: 2% 0%;
+    margin-top: 20vh;
+}
+
+.newsletter h1{
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.newsletter p{
+    color: #FFF;
+}
+.emailsubmit{
+    margin: auto 0;
+    margin-right: 0;
+}
+.emailsubmit #email{
+    padding: 2% 20% 2% 2%;
+    border: none;
+    margin-right: 0;
+}
+
+.emailsubmit #submit{
+    background-color: black;
+    color: white;
+    padding: 2% 10%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-left: -10px;
 }
 
 @media only screen and (max-width: 600px) {
