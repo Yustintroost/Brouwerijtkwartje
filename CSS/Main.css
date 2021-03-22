@@ -14,11 +14,6 @@ body{
     overflow: auto;
 }
 
-.headerOverlay{
-    height: 800px;
-    position: absolute;
-    width: 100%;
-}
 
 .HeaderContent{
     z-index: 2;
@@ -199,10 +194,9 @@ body{
 }
 
 .newsletter h1{
-    font-size: 70px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 8px;
 }
 
 .newsletter p{
@@ -229,6 +223,65 @@ body{
     margin-left: -10px;
 }
 
+.instagram{
+    background-image: url("../Images/unsplash/alice-donovan-rouse-AFTYTQCt9aQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1000px;
+    overflow: auto;
+    
+}
+
+.instagramoverlay{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    padding: 10% 0%;
+} 
+
+.instagram p{
+    color:#FFBF00;
+}
+
+.instagram iframe{
+    margin-left: 25%;
+}
+
+.menufooter{
+    background-color: black;
+    color: white;
+    padding: 5% 0%;
+}
+.menufooter h3{ 
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menufooter h3:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    background-color: #FFF;
+    left: -20%;
+    top: 33%;
+}
+
+.creditfooter{
+    background-color: #171717;
+    color: white;
+}
+
+.creditfooter a{
+    color:#FFBF00 !important;
+    font-weight: bold;
+}
+
+
 @media only screen and (max-width: 600px) {
     .HeaderTitle h1{
         font-size: 32px;
@@ -238,5 +291,9 @@ body{
     }
     .HeaderTitle h1:after{
       display: none;
+    }
+
+    .instagram iframe{
+        margin: 0 auto;
     }
 }
