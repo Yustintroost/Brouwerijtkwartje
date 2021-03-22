@@ -59,6 +59,9 @@ body{
     top: 50%;
 }
 
+
+
+
 .specialtitle{
     text-align: center;
     position: relative;
@@ -296,4 +299,10 @@ body{
     .instagram iframe{
         margin: 0 auto;
     }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+     }
 }

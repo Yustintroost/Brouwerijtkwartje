@@ -12,23 +12,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
         
         <!--style-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/Main.css">
         <link rel="stylesheet" href="CSS/Navigatie.css">
-        <link rel="stylesheet" href="CSS/Grid.css">
     </head>
     <body>
         <!--Header start -->
         <div class="col-12 header">
             <div class="HeaderContent">
                 <div class="container ">
-                    <!--Start navigatie-->              
-                        <ul class="nav">
+
+                    <!--Start navigatie-->
+                    <div class="col-12 row nav">
+                        <ul>
                             <a href="#"><li class="active">Home</li></a>
                             <a href="Shop/index.html"><li >Shop</li></a>
                             <li><img src="Images/logo/kwartje-logo-vector.svg" alt="Logo"></li>
                             <a href="About/index.html"><li>About</li></a>
                             <a href="Contact/index.html"><li>Contact</li></a>
                         </ul>
+                    </div>
+
+                    <div class="Mobielnav col-12"> 
+                        <div id="Hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="col-12 row subnav" id="subnav"> 
+                            <ul>
+                                <li href="#" class="active">Home</li>
+                                <li href="#">Shop</li>
+                                <li href="#">About</li>
+                                <li href="#">Contact</li>
+                            </ul>
+                        </div>
+                    </div>
                     <!--End navigatie-->
 
                     <div class="row">
@@ -242,7 +261,9 @@
     
         <!--End footer-->
 
-       <!-- Font awesome-->
+        <!--Libraries-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/7f40efd54a.js" crossorigin="anonymous"></script>
 
         <!--Custom JS-->
