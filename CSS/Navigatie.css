@@ -7,14 +7,19 @@
     font-size: 24px;
     margin-top: 5vh;
     position: relative;
+   
 }
 
 .nav{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+  text-align: center;
 }
-
+    .nav a{
+        text-align: center;
+        margin: 0 auto;
+    }
 
 .active{
     font-weight: bold;

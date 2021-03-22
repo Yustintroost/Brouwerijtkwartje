@@ -19,6 +19,7 @@ body{
     z-index: 2;
     background-color: rgba(0, 0, 0, .8);
     height: 100%;
+    margin-top: -15px;
 }
 
 .YellowTitle h1{
@@ -59,8 +60,25 @@ body{
     top: 50%;
 }
 
+.main{
+    margin-top: 10vh;
+}
 
+/* start newest beer section */
+.newestbeer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 
+}
+.tweebier{
+    z-index: 4;
+    margin: 0 auto;
+    margin-top: -50vh;
+}
+/* end newest beer section */
+
+/* start lente special section */
 
 .specialtitle{
     text-align: center;
@@ -88,16 +106,6 @@ body{
     top: 50%;
 }
 
-.tweebier{
-    margin-top: -50vh;
-}
-.tweebier img{
-    max-width: 75%;
-}
-
-.main{
-    margin-top: 10vh;
-}
 .Special{
     margin-top: 20vh;
 }
@@ -105,6 +113,8 @@ body{
 .SpecialSquare{
     background-color: #FFF;
     margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .Specialmid{
@@ -113,9 +123,13 @@ body{
     color: #FFF;
     padding: 5%;
 }
-
 .Specialmid p{
-    margin-top: 33%;
+    margin-top: 33%;;
+}
+
+.Specialmidtext{
+    margin: 33% auto auto auto;
+    max-width: 75%;
 }
 
 .Specialmid h2{
@@ -126,8 +140,9 @@ body{
 }
 
 .Specialbier img{
-    margin-top: 33%;
-    margin-bottom: 5%;
+    display: block;
+    margin: 33% auto 5% auto;
+    max-width: 33.3%;
 }
 
 .Specialsubtitle{
@@ -146,6 +161,16 @@ body{
     font-size: 28px;
 }
 
+.socialicons{
+    display: block;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 33.3%;
+}
+/* end lente special section */
+
+/* start events section */
 .events{
     margin-top: 20vh;
 }
@@ -189,6 +214,9 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+
+
+/* end events section */
 
 .newsletter{
     background-color:#FFBF00;

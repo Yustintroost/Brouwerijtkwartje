@@ -1,8 +1,8 @@
 .container{
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .row {
@@ -13,7 +13,7 @@
 
 @media (min-width: 992px) {
     .container {
-        width: 970px;
+        width: 75%;
      }
 }
 
