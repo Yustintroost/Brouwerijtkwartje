@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Yustin Troost">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <title>Brouwerij kwartje - Shop</title>
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
     </head>
     <body>
         <!--Header start -->
-        <header class="col-12 header">
+        <header class="header">
             <div class="HeaderContent">
                 <div class="container ">
                     <!--Start navigatie-->
@@ -47,6 +47,7 @@
         <!--Start main-->
         <main>
 
+ 
             <!--Start Introtekst-->
                 <section class="container Introtekst">
                     <div class="YellowTitle">
@@ -61,82 +62,58 @@
 
                     <!--Start Filter-->
                     <aside class="Filter">
-                        <div class="Filtercheck">
-                            <label for="Bier-zoek"><h3>Zoeken</h3></label><br>
-                            <input type="search" id="Bier-zoek" name="Bier-zoek" aria-label="Zoek voor bier">
-                        </div>
+                        <div class="Filterarea">
+                            <div class="Filtercheck">
+                                <label for="Bier-zoek"><h3>Zoeken</h3></label><br>
+                                <input type="search" id="Bier-zoek" name="Bier-zoek" aria-label="Zoek voor bier">
+                            </div>
 
-                        <div class="Filtercheck">
-                            <label for="Bier-zoek"><h3>Biertype</h3></label><br>
-                            <form action="#">
-                                <input type="checkbox" id="Blond" name="Blond" value="Blond">
-                                <label for="Blond">Blond</label><br>
-                                <input type="checkbox" id="Glutenvrij" name="Glutenvrij" value="Glutenvrij">
-                                <label for="Glutenvrij">Glutenvrij</label><br>
-                                <input type="checkbox" id="IPA" name="IPA" value="IPA">
-                                <label for="IPA">IPA</label><br><br>
-                              </form>
-                        </div>
+                            <div class="Filtercheck">
+                                <label for="Bier-zoek"><h3>Biertype</h3></label><br>
+                                <form action="#">
+                                    <input type="checkbox" id="Blond" name="Blond" value="Blond">
+                                    <label for="Blond">Blond</label><br>
+                                    <input type="checkbox" id="Glutenvrij" name="Glutenvrij" value="Glutenvrij">
+                                    <label for="Glutenvrij">Glutenvrij</label><br>
+                                    <input type="checkbox" id="IPA" name="IPA" value="IPA">
+                                    <label for="IPA">IPA</label><br>
+                                </form>
+                            </div>
 
-                        <div class="Filtercheck">
-                            <label for="Bier-zoek"><h3>Smaak</h3></label><br>
-                            <form action="#">
-                                <input type="checkbox" id="Bitter" name="Bitter" value="Bitter">
-                                <label for="Bitter">Bitter</label><br>
-                                <input type="checkbox" id="Fris" name="Fris" value="Fris">
-                                <label for="Fris">Fris</label><br>
-                                <input type="checkbox" id="DR" name="DR" value="DR">
-                                <label for="DR">Donker & Rijk</label><br><br>
-                              </form>
-                        </div>
+                            <div class="Filtercheck">
+                                <label for="Bier-zoek"><h3>Smaak</h3></label><br>
+                                <form action="#">
+                                    <input type="checkbox" id="Bitter" name="Bitter" value="Bitter">
+                                    <label for="Bitter">Bitter</label><br>
+                                    <input type="checkbox" id="Fris" name="Fris" value="Fris">
+                                    <label for="Fris">Fris</label><br>
+                                    <input type="checkbox" id="DR" name="DR" value="DR">
+                                    <label for="DR">Donker & Rijk</label><br>
+                                </form>
+                            </div>
 
-                        <div class="Filtercheck">
-                            <label for="Bier-zoek"><h3>Alchohol Percentage</h3></label><br>
-                            <form action="#">
-                                <input type="checkbox" id="laag" name="laag" value="laag">
-                                <label for="laag">0,3% - 0,5%</label><br>
-                                <input type="checkbox" id="minderlaag" name="minderlaag" value="minderlaag">
-                                <label for="minderlaag">0,5% - 2,5%</label><br>
-                                <input type="checkbox" id="middel" name="middel" value="middel">
-                                <label for="middel">2,5% - 7,5%</label><br><br>
-                                <input type="checkbox" id="meer" name="meer" value="meer">
-                                <label for="meer">7,5% of meer</label><br><br>
-                              </form>
+                            <div class="Filtercheck">
+                                <label for="Bier-zoek"><h3>Alchohol Percentage</h3></label><br>
+                                <form action="#">
+                                    <input type="checkbox" id="laag" name="laag" value="laag">
+                                    <label for="laag">0,3% - 0,5%</label><br>
+                                    <input type="checkbox" id="minderlaag" name="minderlaag" value="minderlaag">
+                                    <label for="minderlaag">0,5% - 2,5%</label><br>
+                                    <input type="checkbox" id="middel" name="middel" value="middel">
+                                    <label for="middel">2,5% - 7,5%</label><br>
+                                    <input type="checkbox" id="meer" name="meer" value="meer">
+                                    <label for="meer">7,5% of meer</label><br>
+                                </form>
+                            </div>
                         </div>
-
                     </aside>
                     <!--End Filter-->
   
                     <!--Start Shop1-->
-                    <section class="Shop">
-                        <div class="Shopitems">
+                    <section class="Shop1">
+                        <div class="Shopitems" id="Shopitems1">
 
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-        
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
+                            <!--De Aanbevolen bieren laad ik uit de main.js waar ik een array heb gemaakt waar alle bieren instaan-->
 
                         </div>
                     </section>
@@ -192,62 +169,9 @@
 
 
                     <!--Start Shop2-->
-                    <section class="Shop">
-                        <div class="Shopitems">
+                    <section class="Shop2">
+                        <div class="Shopitems" id="Shopitems">
                     
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-                            
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-                            
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
-                            
-                            <div class="Shopitem">
-                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
-                                <div class="Shopitemtekst">
-                                    <h3>Heerlijk Bier</h3>
-                                    <p>€5,40</p>
-                                    <button>Bekijken</button>
-                                </div>      
-                            </div>
                     
                         </div>
                     </section>
@@ -339,9 +263,10 @@
 
        <!-- Font awesome-->
         <script src="https://kit.fontawesome.com/7f40efd54a.js" crossorigin="anonymous"></script>
-
+        
         <!--Custom JS-->
-        <script src="JS/Main.js"></script>
+        <script src="../JS/Main.js"></script>
+        
 
     </body>
 </html> 

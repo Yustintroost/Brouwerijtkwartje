@@ -3,25 +3,26 @@
     grid-template-columns:  repeat(2, 1fr);
 }
 
-.Filter{grid: Filter;}
-.Shop1{grid: Shop1;}
-.Special{grid: Special;}
-.Shop2{grid: Shop2;}
-
+.Filter{grid-area:Filter;}
+.Shop1{grid-area: Shop1;}
+.Special{grid-area: Special !important;}
+.Shop2{grid-area: Shop2;}
 
 .Shopcontainer{
+    margin-top: 10vh;
     display: grid;
+    grid-template-columns: 30% 70%;
     grid-template-areas:
     'Filter   Shop1'
     ' Filter Special'
     'Filter  Shop2';
+    row-gap: 20vh;
 }
 
-.Filter{
+.Filterarea{
     background-color:#171717 ;
     color: #FFF;
     width: 15vw;
-    
 }
 
 .Filter label h3{ 
@@ -32,6 +33,10 @@
 
 .Filtercheck{
     padding: 10%;
+}
+
+.Special{
+    margin-top: 0vh !important;
 }
 
 .Shopitems{
@@ -47,16 +52,7 @@
     max-width: 100%;
 }
 
-.Shopitem button{
-    background-color:#FFBF00;
-    text-align: center;
-    border: none;
-    margin: 5% 5% 5% 0%;
-    padding: 5% 20%;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 .Shopitemtekst{
     padding: 5%;
     text-transform: uppercase;

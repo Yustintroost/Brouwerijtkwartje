@@ -29,6 +29,34 @@ body{
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 8px;
+    margin: 0;
+}
+
+button{
+    background-color:#FFBF00;
+    text-align: center;
+    border: none;
+    margin: 5% 5% 5% 0%;
+    padding: 5% 20%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    list-style: none  !important;
+    color: #FFF !important;
+    
+}
+
+button a{
+    cursor: pointer;
+    list-style: none  !important;
+    color: #FFF !important;
+}
+
+button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .HeaderTitle{
@@ -216,16 +244,7 @@ main{
     padding: 5%;
 }
 
-.Eventtext button{
-    background-color:#FFBF00;
-    text-align: center;
-    border: none;
-    margin: 5% 5% 5% 0%;
-    padding: 5% 20%;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 
 /* end events section */
