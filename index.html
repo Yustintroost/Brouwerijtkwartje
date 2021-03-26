@@ -14,14 +14,16 @@
         <!--style-->
         <link rel="stylesheet" href="CSS/Main.css">
         <link rel="stylesheet" href="CSS/Navigatie.css">
+        <link rel="stylesheet" href="CSS/Footer.css">
         <link rel="stylesheet" href="CSS/Grid.css">
     </head>
     <body>
         <!--Header start -->
-        <div class="col-12 header">
+        <header class="col-12 header">
             <div class="HeaderContent">
                 <div class="container ">
-                    <!--Start navigatie-->              
+                    <!--Start navigatie-->
+                    <nav>              
                         <ul class="nav">
                             <a href="#"><li class="active">Home</li></a>
                             <a href="Shop/index.html"><li >Shop</li></a>
@@ -29,24 +31,24 @@
                             <a href="About/index.html"><li>About</li></a>
                             <a href="Contact/index.html"><li>Contact</li></a>
                         </ul>
+                    </nav>
                     <!--End navigatie-->
 
-                    <div class="row">
-                        <div class="HeaderTitle YellowTitle">
-                            <h1>Brouwerij<br>
-                                Kwartje</h1>
-                        </div>
-                    </div>
+                    <aside class="HeaderTitle YellowTitle">
+                         <h1>Brouwerij<br>Kwartje</h1>
+                    </aside>
                     
                 </div>
             </div>
-        </div>
+        </header>
         <!--End header-->
 
         <!--Start main-->
-        <div class="col-12 main">
+        <main>
+
+            <!--Start newest beer-->
             <div class="container">
-                <div class="newestbeer">
+                <section class="newestbeer">
                     <div class="YellowTitle">
                         <h1>Newest Beers</h1>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimataLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
@@ -54,16 +56,18 @@
                     <div class="tweebier">
                         <img src="Images/bieren/2bier.png" alt="Twee bier">
                     </div>
-                </div>
+                </section>
             </div>
+            <!--End newest beer-->
 
             <!--Start lente specials-->
-            <div class="container Special">
+            <section class="container Special">
                 <div class="YellowTitle specialtitle">
                     <h1>Seizoens<Br>
                         Specials</h1>
                 </div>
                 <div class="SpecialSquare">
+
                     <div class="Specialouter">
                         <div class="Specialbier ">
                             <img src="Images/bieren/1bier.png" alt="Een bier">
@@ -99,131 +103,130 @@
                             </div>
                         </div>                  
                     </div>
-                </div>
-            </div> 
 
+                </div>
+            </section>
             <!--End lente specials-->
 
             <!--Start Events-->
-            <div class="container events">
-                <div class="eventstitle">
+            <section class="container Events">
+                <div class="Eventstitle">
                     <h1>Events</h1>
                     <h2>Bekijk alle events Hier <i class="fas fa-arrow-right"></i></h2>
                 </div>
 
-                <div class="eventposts">
+                <div class="Eventposts">
     
-                        <div class="Eventitem">
-                            <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg"  alt="Een bier">
-                            <div class="Eventtext">
-                                <h3>Proeflokaal</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                                <button>Bekijken</button>
-                            </div>      
-                        </div>
+                    <div class="Eventitem">
+                         <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg"  alt="Een bier">
+                        <div class="Eventtext">
+                            <h3>Proeflokaal</h3>
+                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                            <button>Bekijken</button>
+                        </div>      
+                    </div>
   
-                        <div class="Eventitem">
-                            <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg" alt="Een bier">
-                            <div class="Eventtext">
-                                <h3>Proeflokaal</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                                <button>Bekijken</button>
-                            </div>      
-                        </div>
+                    <div class="Eventitem">
+                        <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg" alt="Een bier">
+                        <div class="Eventtext">
+                            <h3>Proeflokaal</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                            <button>Bekijken</button>
+                        </div>      
+                    </div>
 
-                        <div class="Eventitem">
-                            <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg" alt="Een bier">
-                            <div class="Eventtext">
-                                <h3>Proeflokaal</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                                <button>Bekijken</button>
-                            </div>      
-                        </div>
+                    <div class="Eventitem">
+                        <img src="Images/unsplash/tim-bennett-EoC_IuYmtug-unsplash.jpg" alt="Een bier">
+                        <div class="Eventtext">
+                            <h3>Proeflokaal</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
+                            <button>Bekijken</button>
+                        </div>      
+                    </div>
 
                 </div>
-            </div>
+            </section>
             <!--End Events-->
 
-        </div>
+        </main>
         <!--End main-->
 
         <!--Start footer-->
-        <div class="col-12 footer">
-            <div class=" col-12 newsletter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-4">
-                            <h1>Newsletter</h1>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
-                        </div>
-                        <div class="col-2"></div>
-                        <div class="col-12 col-xl-6 emailsubmit">
-                            <form>
-                                <input type="email" id="email" name="email" placeholder="E-mail">
-                                <input type="submit" id="submit" name="submit" value="submit">
-                            </form>
-                        </div>
+        <footer class="Footer">
+
+            <!--Start Newsbrief-->
+            <article class="Newsletter">
+                <div class="container Newslettergrid">
+                    <div class="Newslettertext">
+                        <h1>Newsletter</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+                    </div>
+                    <div class="Emailsubmit">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                            <input type="submit" id="submit" name="submit" value="submit">
+                        </form>
                     </div>
                 </div>
-            </div>
+            </article>
+            <!--End Newsbrief-->
 
-            <div class="col-12 instagram">
+            <!--Start instagram sectie-->
+            <article class="instagram">
                 <div class="instagramoverlay">
                     <div class="container">
-                        <div class="row YellowTitle">
-                            <div class="instagramtext col-12 col-xl-6">
+                        <div class="Instagramcontent YellowTitle">
+                            <div class="instagramtext">
                                 <h1>Instagram</h1>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
                             </div> 
-                            <div class="instagramtext col-12 col-xl-6">
+                            <div class="instagramtext">
                                 <iframe src="https://www.instagram.com/p/CCG4OlIpyLc/embed/captioned" width="400" height="700" frameborder="20" scrolling="no" allowtransparency="true"></iframe> 
                             </div>      
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <!--end instagram sectie-->
 
-            <div class="col-12 menufooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-4">
-                            <img src="Images/logo/kwartje-logo-vector.svg" alt="Logo">
+            <!--Start footer menu-->
+            <section class="Menufooter">
+                <div class="container Footermenugrid">
+                    <div class="Footerlogo">
+                        <img src="Images/logo/kwartje-logo-vector.svg" alt="Logo">
+                    </div>
+                    <div class="Footermenus">
+                        <div class="Socailmenu">
+                            <h3>volg ons</h3>
+                             <ul>
+                                <li href="#" >Instagram</li>
+                                <li href="#">Facebook</li>
+                                <li href="#">Linkedin</li>
+                            </ul>
                         </div>
-                        <div class="col-12 col-xl-4"> </div>
-                        <div class="col-12 col-xl-4 row">
-                            <div class="col-6">
-                                <h3>volg ons</h3>
-                                <ul>
-                                    <li href="#" >Instagram</li>
-                                    <li href="#">Facebook</li>
-                                    <li href="#">Linkedin</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <h3>Menu</h3>
-                                <ul>
-                                    <li href="#" class="active">Home</li>
-                                    <li href="#">Shop</li>
-                                    <li href="#">About</li>
-                                    <li href="#">Contact</li>
-                                </ul>
-                            </div>
+                        <div class="Footermenu">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li href="#" class="active">Home</li>
+                                <li href="#">Shop</li>
+                                <li href="#">About</li>
+                                <li href="#">Contact</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!--End footer menu-->
 
-            <div class="col-12 creditfooter">
+            <!--Start Credit footer-->
+            <aside class="creditfooter">
                 <div class="container"> 
-                    <div class="row"> 
-                        <p>Design and realisation by <a href="https://yustintroost.nl/">Yustin Troost</a></p>
-                    </div>
+                    <p>Design and realisation by <a href="https://yustintroost.nl/">Yustin Troost</a></p>
                 </div>
-            </div>
+            </aside>
+            <!--End Credit footer-->
 
-        </div>
-
-    
+        </footer>
         <!--End footer-->
 
        <!-- Font awesome-->

@@ -1,0 +1,119 @@
+
+/* Start newsleter section */
+.Newsletter{
+    background-color:#FFBF00;
+    padding: 2% 0%;
+    margin-top: 20vh;
+}
+.Newslettergrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Newsletter h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Newsletter p{
+    color: #FFF;
+}
+.Emailsubmit{
+    width: 100%;
+    display: block;
+    margin: auto 0 auto auto;
+}
+.Emailsubmit #email{
+    padding: 2% 20% 2% 2%;
+    border: none;
+    margin-right: 0;
+}
+
+.Emailsubmit #submit{
+    background-color: black;
+    color: white;
+    padding: 2% 10%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-left: -10px;
+}
+
+/* End newsleter section */
+
+.instagram{
+    background-image: url("../Images/unsplash/alice-donovan-rouse-AFTYTQCt9aQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1000px;
+    overflow: auto;
+    
+}
+
+.instagramoverlay{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    
+} 
+
+.Instagramcontent{
+    padding: 10% 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.instagram p{
+    color:#FFBF00;
+}
+
+.instagram iframe{
+    margin-left: 25%;
+}
+
+.Menufooter{
+    background-color: black;
+    color: white;
+    padding: 5% 0%;
+}
+
+.Footermenugrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Footermenus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Menufooter h3{ 
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+.Menufooter h3:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    background-color: #FFF;
+    left: -20%;
+    top: 33%;
+}
+
+.creditfooter{
+    background-color: #171717;
+    color: white;
+    padding: 1%;
+}
+
+.creditfooter a{
+    color:#FFBF00 !important;
+    font-weight: bold;
+}

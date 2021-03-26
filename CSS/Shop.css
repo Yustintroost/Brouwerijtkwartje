@@ -1,0 +1,65 @@
+.Introtekst{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+}
+
+.Filter{grid: Filter;}
+.Shop1{grid: Shop1;}
+.Special{grid: Special;}
+.Shop2{grid: Shop2;}
+
+
+.Shopcontainer{
+    display: grid;
+    grid-template-areas:
+    'Filter   Shop1'
+    ' Filter Special'
+    'Filter  Shop2';
+}
+
+.Filter{
+    background-color:#171717 ;
+    color: #FFF;
+    width: 15vw;
+    
+}
+
+.Filter label h3{ 
+    border-bottom: solid 3px #FFF;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.Filtercheck{
+    padding: 10%;
+}
+
+.Shopitems{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 10%; 
+}
+.Shopitem{
+    background-color: #FFF;
+}
+
+.Shopitem img{
+    max-width: 100%;
+}
+
+.Shopitem button{
+    background-color:#FFBF00;
+    text-align: center;
+    border: none;
+    margin: 5% 5% 5% 0%;
+    padding: 5% 20%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Shopitemtekst{
+    padding: 5%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}

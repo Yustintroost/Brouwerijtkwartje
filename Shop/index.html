@@ -12,147 +12,336 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
         
         <!--style-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="../CSS/Main.css">
+        <link rel="stylesheet" href="../CSS/Shop.css">
         <link rel="stylesheet" href="../CSS/Navigatie.css">
+        <link rel="stylesheet" href="../CSS/Footer.css">
+        <link rel="stylesheet" href="../CSS/Grid.css">
     </head>
     <body>
         <!--Header start -->
-        <div class="col-12 header">
+        <header class="col-12 header">
             <div class="HeaderContent">
                 <div class="container ">
-
                     <!--Start navigatie-->
-                    <div class="col-12 row nav">
-                        <ul>
-                            <a href="../index.html"><li href="/" >Home</li></a>
-                            <a href="Shop/index.html"><li href="#" class="active">Shop</li></a>
+                    <nav>              
+                        <ul class="nav">
+                            <a href="../Index.html"><li>Home</li></a>
+                            <a href="../Shop/index.html"><li  class="active">Shop</li></a>
                             <li><img src="../Images/logo/kwartje-logo-vector.svg" alt="Logo"></li>
-                            <a href="../About/index.html"><li href="#">About</li></a>
-                            <a href="../Contact/index.html"><li href="#">Contact</li></a>
+                            <a href="../About/index.html"><li>About</li></a>
+                            <a href="../Contact/index.html"><li>Contact</li></a>
                         </ul>
-                    </div>
+                    </nav>
+                    <!--End navigatie-->
 
-                    <div class="Mobielnav col-12"> 
-                        <div id="Hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <aside class="HeaderTitle YellowTitle">
+                         <h1>Brouwerij<br>Kwartje</h1>
+                    </aside>
+                    
+                </div>
+            </div>
+        </header>
+        <!--End header-->
+
+        <!--Start main-->
+        <main>
+
+            <!--Start Introtekst-->
+                <section class="container Introtekst">
+                    <div class="YellowTitle">
+                        <h1>shop</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimataLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                    </div>
+                </section>
+            <!--End Introtekst-->
+
+            <!--Start Shop-->
+                <section class="container Shopcontainer">
+
+                    <!--Start Filter-->
+                    <aside class="Filter">
+                        <div class="Filtercheck">
+                            <label for="Bier-zoek"><h3>Zoeken</h3></label><br>
+                            <input type="search" id="Bier-zoek" name="Bier-zoek" aria-label="Zoek voor bier">
                         </div>
-                        <div class="col-12 row subnav" id="subnav"> 
+
+                        <div class="Filtercheck">
+                            <label for="Bier-zoek"><h3>Biertype</h3></label><br>
+                            <form action="#">
+                                <input type="checkbox" id="Blond" name="Blond" value="Blond">
+                                <label for="Blond">Blond</label><br>
+                                <input type="checkbox" id="Glutenvrij" name="Glutenvrij" value="Glutenvrij">
+                                <label for="Glutenvrij">Glutenvrij</label><br>
+                                <input type="checkbox" id="IPA" name="IPA" value="IPA">
+                                <label for="IPA">IPA</label><br><br>
+                              </form>
+                        </div>
+
+                        <div class="Filtercheck">
+                            <label for="Bier-zoek"><h3>Smaak</h3></label><br>
+                            <form action="#">
+                                <input type="checkbox" id="Bitter" name="Bitter" value="Bitter">
+                                <label for="Bitter">Bitter</label><br>
+                                <input type="checkbox" id="Fris" name="Fris" value="Fris">
+                                <label for="Fris">Fris</label><br>
+                                <input type="checkbox" id="DR" name="DR" value="DR">
+                                <label for="DR">Donker & Rijk</label><br><br>
+                              </form>
+                        </div>
+
+                        <div class="Filtercheck">
+                            <label for="Bier-zoek"><h3>Alchohol Percentage</h3></label><br>
+                            <form action="#">
+                                <input type="checkbox" id="laag" name="laag" value="laag">
+                                <label for="laag">0,3% - 0,5%</label><br>
+                                <input type="checkbox" id="minderlaag" name="minderlaag" value="minderlaag">
+                                <label for="minderlaag">0,5% - 2,5%</label><br>
+                                <input type="checkbox" id="middel" name="middel" value="middel">
+                                <label for="middel">2,5% - 7,5%</label><br><br>
+                                <input type="checkbox" id="meer" name="meer" value="meer">
+                                <label for="meer">7,5% of meer</label><br><br>
+                              </form>
+                        </div>
+
+                    </aside>
+                    <!--End Filter-->
+  
+                    <!--Start Shop1-->
+                    <section class="Shop">
+                        <div class="Shopitems">
+
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+        
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+
+                        </div>
+                    </section>
+                    <!--End Shop1-->
+
+                    <!--Start lente specials-->
+                    <section class="Special">
+                        <div class="YellowTitle specialtitle">
+                            <h1>Seizoens<Br>
+                                Specials</h1>
+                        </div>
+                        <div class="SpecialSquare">
+
+                            <div class="Specialouter">
+                                <div class="Specialbier ">
+                                    <img src="../Images/bieren/1bier.png" alt="Een bier">
+                                </div>
+                                <div class="Specialsubtitle">
+                                    <h2>Brute Force</h2>
+                                    <p>Heel fris en erg lekker</p>
+                                    <div class="socialicons">
+                                        <i class="fab fa-instagram col-2"></i> 
+                                        <i class="fab fa-facebook-square col-2"></i>
+                                    </div>
+                                </div>                  
+                            </div>
+
+                            <div class="Specialmid">
+                                <div class="Specialmidtext">
+                                    <h2>Beste van de 
+                                        lente</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                                </div>
+                            </div>
+
+                            <div class="Specialouter">
+                                <div class="Specialbier ">
+                                    <img src="../Images/bieren/1bier.png" alt="Een bier">
+                                </div>
+                                <div class="Specialsubtitle">
+                                    <h2>Brute Force</h2>
+                                    <p>Heel fris en erg lekker</p>
+                                    <div class="socialicons">
+                                        <i class="fab fa-instagram col-2"></i> 
+                                        <i class="fab fa-facebook-square col-2"></i>
+                                    </div>
+                                </div>                  
+                            </div>
+
+                        </div>
+                    </section>
+                    <!--End lente specials-->
+
+
+                    <!--Start Shop2-->
+                    <section class="Shop">
+                        <div class="Shopitems">
+                    
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+                            
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+                            
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+                            
+                            <div class="Shopitem">
+                                <img src="../Images/bieren/Brute Force Single.jpg"  alt="Een bier">
+                                <div class="Shopitemtekst">
+                                    <h3>Heerlijk Bier</h3>
+                                    <p>€5,40</p>
+                                    <button>Bekijken</button>
+                                </div>      
+                            </div>
+                    
+                        </div>
+                    </section>
+                    <!--End Shop2-->
+
+                </section>
+            <!--End Shop-->
+
+        </main>
+        <!--End main-->
+ 
+        <!--Start footer-->
+        <footer class="Footer">
+
+            <!--Start Newsbrief-->
+            <article class="Newsletter">
+                <div class="container Newslettergrid">
+                    <div class="Newslettertext">
+                        <h1>Newsletter</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+                    </div>
+                    <div class="Emailsubmit">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
+                            <input type="submit" id="submit" name="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <!--End Newsbrief-->
+
+            <!--Start instagram sectie-->
+            <article class="instagram">
+                <div class="instagramoverlay">
+                    <div class="container">
+                        <div class="Instagramcontent YellowTitle">
+                            <div class="instagramtext">
+                                <h1>Instagram</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                            </div> 
+                            <div class="instagramtext">
+                                <iframe src="https://www.instagram.com/p/CCG4OlIpyLc/embed/captioned" width="400" height="700" frameborder="20" scrolling="no" allowtransparency="true"></iframe> 
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--end instagram sectie-->
+
+            <!--Start footer menu-->
+            <section class="Menufooter">
+                <div class="container Footermenugrid">
+                    <div class="Footerlogo">
+                        <img src="../Images/logo/kwartje-logo-vector.svg" alt="Logo">
+                    </div>
+                    <div class="Footermenus">
+                        <div class="Socailmenu">
+                            <h3>volg ons</h3>
+                             <ul>
+                                <li href="#" >Instagram</li>
+                                <li href="#">Facebook</li>
+                                <li href="#">Linkedin</li>
+                            </ul>
+                        </div>
+                        <div class="Footermenu">
+                            <h3>Menu</h3>
                             <ul>
-                                <a href="#"><li class="active">Home</li></a>
-                                <li href="#">Shop</li>
+                                <li href="#">Home</li>
+                                <li href="#" class="active">Shop</li>
                                 <li href="#">About</li>
                                 <li href="#">Contact</li>
                             </ul>
                         </div>
                     </div>
-                    <!--End navigatie-->
-
-                    <div class="row">
-                        <div class="col-12 col-xl-6 HeaderTitle YellowTitle">
-                            <h1>Brouwerij<br>
-                                Kwartje</h1>
-                        </div>
-                    </div>
-                    
                 </div>
-            </div>
-        </div>
-        <!--End header-->
+            </section>
+            <!--End footer menu-->
 
-        <!--Start main-->
-        <div class="col-12 main">
-            <div class="photogrid col-10 " >
-                <div class="row" id="photogrid">
-                </div>
-      
-              </div>
-        </div>
-        <!--End main-->
-
-        <!--Start footer-->
-        <div class="col-12 footer">
-            <div class=" col-12 newsletter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-4">
-                            <h1>Newsletter</h1>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
-                        </div>
-                        <div class="col-2"></div>
-                        <div class="col-12 col-xl-6 emailsubmit">
-                            <form>
-                                <input type="email" id="email" name="email" placeholder="E-mail">
-                                <input type="submit" id="submit" name="submit" value="submit">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 menufooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-4">
-                            <img src="../Images/logo/kwartje-logo-vector.svg" alt="Logo">
-                        </div>
-                        <div class="col-12 col-xl-4"> </div>
-                        <div class="col-12 col-xl-4 row">
-                            <div class="col-6">
-                                <h3>volg ons</h3>
-                                <ul>
-                                    <li href="#" >Instagram</li>
-                                    <li href="#">Facebook</li>
-                                    <li href="#">Linkedin</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <h3>Menu</h3>
-                                <ul>
-                                    <li href="#" class="active">Home</li>
-                                    <li href="#">Shop</li>
-                                    <li href="#">About</li>
-                                    <li href="#">Contact</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 creditfooter">
+            <!--Start Credit footer-->
+            <aside class="creditfooter">
                 <div class="container"> 
-                    <div class="row"> 
-                        <p>Design and realisation by <a href="https://yustintroost.nl/">Yustin Troost</a></p>
-                    </div>
+                    <p>Design and realisation by <a href="https://yustintroost.nl/">Yustin Troost</a></p>
                 </div>
-            </div>
+            </aside>
+            <!--End Credit footer-->
 
-        </div>
-
-    
+        </footer>
         <!--End footer-->
 
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-
-        <!--Libraries-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+       <!-- Font awesome-->
         <script src="https://kit.fontawesome.com/7f40efd54a.js" crossorigin="anonymous"></script>
 
         <!--Custom JS-->
-        <script src="Javascript/app.js"></script>
-        <script src="../JS/Main.js"></script>
+        <script src="JS/Main.js"></script>
 
     </body>
 </html> 
