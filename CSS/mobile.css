@@ -1,0 +1,63 @@
+@media only screen and (max-width: 600px) {
+
+    .header{
+        background: none;
+    }
+
+    .mobilenav{
+        display: block;
+    }
+    .HeaderContent{
+        background: none;
+    }
+    
+    .mobilenav {
+        overflow: hidden;
+        position: relative;
+        height: 33vh;
+        margin-top: 15px;
+    }
+    
+    .mobilenav #mobilenavitems {
+        display: none;
+    }
+    
+    .topnmobilenavav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .mobilenav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        color: #FFF;
+        left: 0;
+        top: 0;
+        height: 15vh;
+        width: 15vh;
+        border-radius: 0px 0px 70px 0px ;
+    }
+
+    .mobilenav a.icon i { 
+        padding: 25%;
+        font-size: 2em;
+    }
+    
+    .mobileactive {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .nav{
+        display: none;
+    }
+
+}
+
+.mobilenav{
+    display: none;
+}

@@ -1,7 +1,7 @@
 body{
     background-color:#EBEBEB ;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     margin: 0;
     }
 
@@ -32,7 +32,7 @@ body{
     margin: 0;
 }
 
-button{
+.button{
     background-color:#FFBF00;
     text-align: center;
     border: none;
@@ -54,7 +54,7 @@ button a{
     color: #FFF !important;
 }
 
-button:hover{
+button:hover, .button:hover{
     opacity: 0.5;
     transition: 0.5s;
 }
@@ -250,6 +250,24 @@ main{
 /* end events section */
 
 
+.leeftijdtietel{
+    text-align: center;
+    
+}
+
+.leeftijdtietel h1{
+    font-size:32px !important;
+}
+
+.leeftijdcheck{
+    padding: 2.5% 5%;
+    width: 25vw;
+    margin: 5vh 25vw;
+}
+
+.leeftijd{
+    margin-top: 25vh;
+}
 
 @media only screen and (max-width: 600px) {
     .HeaderTitle h1{

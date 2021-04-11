@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Yustin Troost">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Brouwerij Kwartje - Home</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+        
+        <!--style-->
+        <link rel="stylesheet" href="CSS/Main.css">
+        <link rel="stylesheet" href="CSS/Navigatie.css">
+        <link rel="stylesheet" href="CSS/Footer.css">
+        <link rel="stylesheet" href="CSS/Grid.css">
+        <link rel="stylesheet" href="CSS/mobile.css">
+    </head>
+    <body  onload="checkCookie()"> 
+        <!--Header start -->
+        <header class="col-12 header">
+            <div class="HeaderContent">
+                <div class="container ">
+                    <!--Start navigatie-->
+                    <nav>              
+                        <ul class="nav">
+                            <a href="#"><li></li></a>
+                            <a href="Shop/index.html"><li ></li></a>
+                            <li><img src="Images/logo/kwartje-logo-vector.svg" alt="Logo"></li>
+                            <a href="About/index.html"><li></li></a>
+                            <a href="Contact/index.html"><li></li></a>
+                        </ul>
+                    </nav>
+                    <!--End navigatie-->
+                    <div class="leeftijd">
+                        <aside class=" YellowTitle leeftijdtietel">
+                            <h1>Ben jij ouder dan 18 jaar</h1>
+                        </aside>
+                        <form action='index.html' method='get'>
+                            <input type='hidden' id='leeftijd' name='leeftijd' value='ja'/>
+                            <input type='submit' class='button leeftijdcheck' value='Ik ben ouder dan 18'/>
+                        </form>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </header>
+        <!--End header-->
+
+
+            <!--Start footer menu-->
+            <section class="Menufooter">
+                <div class="container Footermenugrid">
+                    <div class="Footerlogo">
+                        <img src="Images/logo/kwartje-logo-vector.svg" alt="Logo">
+                    </div>
+                    <div class="Footermenus">
+                        <div class="Socailmenu">
+                            <h3>volg ons</h3>
+                             <ul>
+                                <li href="#" >Instagram</li>
+                                <li href="#">Facebook</li>
+                                <li href="#">Linkedin</li>
+                            </ul>
+                        </div>
+                        <div class="Footermenu">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li href="#" class="active">Home</li>
+                                <li href="#">Shop</li>
+                                <li href="#">About</li>
+                                <li href="#">Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End footer menu-->
+
+            <!--Start Credit footer-->
+            <aside class="creditfooter">
+                <div class="container"> 
+                    <p>Design and realisation by <a href="https://yustintroost.nl/">Yustin Troost</a></p>
+                </div>
+            </aside>
+            <!--End Credit footer-->
+
+        </footer>
+        <!--End footer-->
+
+       <!-- Font awesome-->
+        <script src="https://kit.fontawesome.com/7f40efd54a.js" crossorigin="anonymous"></script>
+
+        <!--Custom JS-->
+        <script src="JS/Main.js"></script>
+        <script src="JS/leeftijd.js"></script>
+    </body>
+</html>

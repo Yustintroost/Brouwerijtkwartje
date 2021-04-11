@@ -14,11 +14,12 @@
         <!--style-->
         <link rel="stylesheet" href="../CSS/Main.css">
         <link rel="stylesheet" href="../CSS/Shop.css">
+        <link rel="stylesheet" href="../CSS/shopitem.css">
         <link rel="stylesheet" href="../CSS/Navigatie.css">
         <link rel="stylesheet" href="../CSS/Footer.css">
         <link rel="stylesheet" href="../CSS/Grid.css">
     </head>
-    <body>
+    <body onload="checkCookie()">
         <!--Header start -->
         <header class="header">
             <div class="HeaderContent">
@@ -26,7 +27,7 @@
                     <!--Start navigatie-->
                     <nav>              
                         <ul class="nav">
-                            <a href="../Index.html"><li>Home</li></a>
+                            <a href="/"><li>Home</li></a>
                             <a href="../Shop/index.html"><li  class="active">Shop</li></a>
                             <li><img src="../Images/logo/kwartje-logo-vector.svg" alt="Logo"></li>
                             <a href="../About/index.html"><li>About</li></a>
@@ -35,7 +36,7 @@
                     </nav>
                     <!--End navigatie-->
 
-                    <aside class="HeaderTitle YellowTitle">
+                    <aside class="HeaderTitle YellowTitle ">
                          <h1>Brouwerij<br>Kwartje</h1>
                     </aside>
                     
@@ -47,28 +48,65 @@
         <!--Start main-->
         <main>
 
-            <!--Start Introtekst-->
-                <section class="container Introtekst">
-                    <div class="YellowTitle">
-                        <h1>shop</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimataLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+            <!--Start Product info -->
+                <section class="container">
+                    <h1 id="biernaam"></h1>
+                    <h3 class="starrating"> | <a href="../Shop/index.html">Bekijk gelijke bieren</a></h3>
+                    <div class="productcontainer">
+                        <div class="prodcutafbeeldingen">
+                            <img src="" alt="Bier img" id="bierimg">
+                        </div>
+                        <div class="productprijsinfo">
+                            <h2 id="bierprijs"></h2>
+                            <div class="custombestelknop">
+                                <div class="addtocar"><a>Add to cart</a></div>
+                                <div class="buynow"><a>Buy now</a></div>
+                            </div>
+                            <h3>Product info</h3>
+                            <p id="productinfo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        </div>
                     </div>
                 </section>
-            <!--End Introtekst-->
-            <!--Start Product info -->
-            <h1>
-                Result Page
-            </h1>
-            <h2>
-                Name: <span id="biernaam" >
-            </h2>
-            <h2>
-                Surname: <span id="bierprijs" >
-            </h2>
-            <img src="" alt="Bier img" id="bierimg">
-            <!--End Product info-->
-              
 
+                <section class="container extra">
+                    <div class="reviews" id="reviews">
+                        <div class="review">
+                            <!--De reviews wordne geladen uit reviews.js-->
+                            <h1 class="reviewnaam"></h1>
+                            <p class="reviewtekst"> </p>
+                        </div>
+                    </div>
+                    <div class="extrainfo">
+                        <button class="accordion">Meer info  <i class="fas fa-sort-down"></i> </button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Waar komt het vandaan? <i class="fas fa-sort-down"></i></button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            <!--End Product info-->
+
+            <!--Start aanbevolen producten-->
+            <section class="container aanbevolenproducten">
+                <h1> Artikelen die hier op lijken</h1>
+                <h3 >Wat vind je hier van?</h3>
+                <div class="aanbevolengrid" id="aanbevolenimgs">
+                    <div><h1></h1></div>
+                </div>
+                <div class="aanbevolengrid" id="aanbevolennamen">
+                    <div><h1>Naam</h1></div>
+                </div>
+                <div class="aanbevolengrid" id="aanbevolenprijzen">
+                    <div><h1>Prijs</h1></div>
+                </div>
+            </section>
+            <!--Start aanbevolen producten-->
+              
         </main>
         <!--End main-->
  
@@ -150,11 +188,12 @@
         </footer>
         <!--End footer-->
 
-       <!-- Font awesome-->
+        <!-- Font awesome-->
         <script src="https://kit.fontawesome.com/7f40efd54a.js" crossorigin="anonymous"></script>
         
         <!--Custom JS-->
-        <!-- <script src="../JS/Main.js"></script> -->
+        <script src="../JS/bieren.js"></script>
+        <script src="../JS/reviews.js"></script>
         <script src="../JS/shopitem.js"></script>
 
     </body>

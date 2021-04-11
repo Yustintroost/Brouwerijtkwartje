@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head onload="checkCookie()">
         <meta charset="UTF-8">
-        <meta name="description" content="Free Web tutorials">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Browuerij kwartje">
+        <meta name="keywords" content="Brouwerij kwartje">
         <meta name="author" content="Yustin Troost">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,10 +18,12 @@
         <link rel="stylesheet" href="CSS/Navigatie.css">
         <link rel="stylesheet" href="CSS/Footer.css">
         <link rel="stylesheet" href="CSS/Grid.css">
+        <link rel="stylesheet" href="CSS/mobile.css">
     </head>
-    <body>
+    <!--onload="checkCookie()"-->
+    <body onload="checkCookie()">
         <!--Header start -->
-        <header class="col-12 header">
+        <header class="header">
             <div class="HeaderContent">
                 <div class="container ">
                     <!--Start navigatie-->
@@ -124,7 +126,7 @@
                         <div class="Eventtext">
                             <h3>Proeflokaal</h3>
                              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                            <button>Bekijken</button>
+                            <button class="button">Bekijken</button>
                         </div>      
                     </div>
   
@@ -133,7 +135,7 @@
                         <div class="Eventtext">
                             <h3>Proeflokaal</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                            <button>Bekijken</button>
+                            <button class="button">Bekijken</button>
                         </div>      
                     </div>
 
@@ -142,7 +144,7 @@
                         <div class="Eventtext">
                             <h3>Proeflokaal</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </p>
-                            <button>Bekijken</button>
+                            <button class="button"> Bekijken</button>
                         </div>      
                     </div>
 
@@ -236,5 +238,6 @@
 
         <!--Custom JS-->
         <script src="JS/Main.js"></script>
+        <script src="JS/leeftijd.js"></script>
     </body>
 </html>
