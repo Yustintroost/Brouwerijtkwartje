@@ -6,14 +6,23 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Yustin Troost">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brouwerij kwartje - Shop</title>
+        <title>Brouwerij kwartje - Contact</title>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+        <link rel="manifest" href="../favicon//site.webmanifest">
+        <link rel="mask-icon" href="../favicon//safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
         
         <!--style-->
         <link rel="stylesheet" href="../CSS/Main.css">
-        <link rel="stylesheet" href="../CSS/Shop.css">
+        <link rel="stylesheet" href="../CSS/Contact.css">
         <link rel="stylesheet" href="../CSS/Navigatie.css">
         <link rel="stylesheet" href="../CSS/Footer.css">
         <link rel="stylesheet" href="../CSS/Grid.css">
@@ -29,8 +38,8 @@
                             <a href="/"><li>Home</li></a>
                             <a href="../Shop/index.html"><li>Shop</li></a>
                             <li><img src="../Images/logo/kwartje-logo-vector.svg" alt="Logo"></li>
-                            <a href="../About/index.html" ><li class="active">About</li></a>
-                            <a href="../Contact/index.html"><li>Contact</li></a>
+                            <a href="../About/index.html" ><li>About</li></a>
+                            <a href="../Contact/index.html"><li  class="active">Contact</li></a>
                         </ul>
                     </nav>
                     <!--End navigatie-->
@@ -52,7 +61,21 @@
                 <section class="container Introtekst">
                     <div class="YellowTitle">
                         <h1>Contact</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimataLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                            <form method="post">
+                              <label for="fname">Voornaam</label> <br>
+                              <input type="vnaam" id="vnaam" name="vnaam" placeholder="Voornaam">
+                                <br><br>
+                              <label for="lname">Achternaam</label> <br>
+                              <input type="anaam" id="anaam" name="anaam" placeholder="Achternaam">
+                                <br><br>
+                            <label for="subject">Onderwerp</label> <br>
+                            <textarea id="onderwerp" name="onderwerp" placeholder="Onderwerp" style="height:200px"></textarea>
+                          
+                            <input type="submit" class="button" value="Submit">
+                        </form>
+                    </div>
+                    <div class="team">
+                        <img src="../Images/team-kwartje-nieuw.jpg" alt="Het team"> 
                     </div>
                 </section>
             <!--End Introtekst-->
