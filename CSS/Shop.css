@@ -3,6 +3,7 @@
     grid-template-columns:  repeat(2, 1fr);
 }
 
+
 .Filter{grid-area:Filter;}
 .Shop1{grid-area: Shop1;}
 .Special{grid-area: Special !important;}
